@@ -1,0 +1,21 @@
+application: aubudgie
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /style
+  static_dir: style
+  
+- url: /script
+  static_dir: script
+  
+- url: /.*
+  script: main.application
+  
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
