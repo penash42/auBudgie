@@ -10,6 +10,9 @@ handlers:
   
 - url: /script
   static_dir: script
+
+- url: /fonts
+  static_dir: fonts
   
 - url: /.*
   script: main.application
